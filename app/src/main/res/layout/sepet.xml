@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/sepetPost"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#FF880B">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/urunSepet"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:text="iPhone 7"
+                android:textSize="22dp"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/fiyaturunSepet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2000"
+                android:textSize="22dp"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/urunKaldir"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:drawableLeft="@drawable/delete_icon"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@color/white">
+
+            </Button>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

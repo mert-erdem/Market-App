@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_margin="10dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#FF880B">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/saticiText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Satıcı"
+                    android:textSize="15dp">
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/urunFoto"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/urunIsim"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Samsung Galaxy S10"
+                    android:textSize="22sp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/urunAciklama"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Açıklama"
+                    android:textSize="12sp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/urunFiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2.500"
+                    android:textSize="25dp"
+                    android:textAlignment="viewEnd"
+                    android:gravity="bottom"
+                    tools:ignore="RtlCompat">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/sepeteEkle"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="end"
+                    android:drawableLeft="@drawable/basket_icon"
+                    android:drawableTint="@color/white"
+                    android:text="Sepete Ekle"
+                    android:textAllCaps="false"></Button>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OdemeFragment"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ödeme"
+        android:textSize="40sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/adresText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adres"
+        android:textSize="20sp"
+        android:layout_margin="20dp">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ödeme yöntemi seçiniz;"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black">
+
+    </TextView>
+    <RadioGroup
+        android:id="@+id/odemeSecenekleri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kredi kartı">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banka kartı"
+            android:layout_marginLeft="10dp">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kapıda ödeme"
+            android:layout_marginLeft="10dp">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/siparisiTamamla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Siparişi tamamla"
+        android:layout_margin="20dp">
+
+    </Button>
+
+
+
+</LinearLayout>
